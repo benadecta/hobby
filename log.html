@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<title> log in page</title>
+		<link rel="stylesheet" href="log.css">
+	</head>
+	<body>
+		<div class="login-page">
+		<div class="form">
+			<form class="register-form">
+			<input type="username" placeholder="enter your user name "/>
+			<input type="email id" placeholder="enter email id"/>
+			<input type="password" placeholder="enter password "/>
+			<button>create</button>
+			<p class="message">already registered ?<a href="a">log in</a>
+			</p>
+			</form>
+			<form class="login-form">
+			<input type="text" placeholder="username">
+			<input type="password" placeholder="password" pattern=".{8,}" required title="8 characters minimum">
+			<button>log in</button>
+			<p class ="message">not registered?<a href ="a">register</a></p>
+			</form>
+			</div></div>
+			<script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+			<script>
+			$('.message a').click(function()
+			{
+				$('form').animate({height:"toggle",opacity:"toggle"},"slow")
+			});
+			</script>
+	</body>
+</html>
